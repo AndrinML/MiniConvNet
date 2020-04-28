@@ -21,12 +21,14 @@ The following paragraphs shows results of different methods improving the accura
 having a maintainable number of trainable parameters.
 "MiniConvNet" is a lightweight CNN and has 370'286 trainable weights.
 
-| Training accuracy | Validation accuracy | Adam    | RMSprop | Data augmentation |
-| :----------------:|:-------------------:|:-------:|:-------:|:-----------------:|
-| 89%               | 91%                 | x       |         |                   |
-| 85%               | 88%                 | x       |         | x                 |
-| 90%               | 91%                 |         | x       |                   |
-| 83%               | 86%                 |         | x       | x                 |
+
+| Method                 | Training accuracy | Validation accuracy |
+|:-----------------------|:-----------------:|:-------------------:|
+| Adam                   | 89%               | **91%**             |
+| Adam & augmentation    | 85%               | **88%**             |
+| RMSprop                | 90%               | **91%**             |
+| RMSprop & augmentation | 83%               | **86%**             |
+
 
 #### Loss function
 For all the experiments a categorical cross-entropy loss function is used.
@@ -48,23 +50,17 @@ The experiments were run on GPU on a GeForce GTX 960M graphics card.
 It was really fun to see how straight forward one can build something meaningful.  
 
 ### Training Results
-![](figures/adam_no_augmentation.png)
+![](figures/adam_no_augmentation.png)*Training history of "MiniConvNet" using the Adam optimizer without data
+augmentation over 10 epochs.*
 
-*Training history of "MiniConvNet" using the Adam optimizer without data augmentation over 10 epochs.*
+![](figures/adam_data_augmentation.png)*Training history of "MiniConvNet" using the Adam optimizer and data augmentation
+over 10 epochs.*
 
-![](figures/adam_data_augmentation.png)
+![](figures/rmsprop_0_0005_no_augmentation.png)*Training history of "MiniConvNet" using the RMSprop optimizer without
+data augmentation over 10 epochs and a learning rate of 0.0005.*
 
-*Training history of "MiniConvNet" using the Adam optimizer and data augmentation over 10 epochs.*
-
-![](figures/rmsprop_0_0005_no_augmentation.png)
-
-*Training history of "MiniConvNet" using the RMSprop optimizer without data augmentation over 10 epochs and a learning
- rate of 0.0005.*
-
-![](figures/rmsprop_0_0005_data_augmentation.png)
-
-*Training history of "MiniConvNet" using the RMSprop optimizer and data augmentation over 10 epochs and a learning rate
- rate of 0.0005.*
+![](figures/rmsprop_0_0005_data_augmentation.png)*Training history of "MiniConvNet" using the RMSprop optimizer and
+data augmentation over 10 epochs and a learning rate of 0.0005.*
 
 #### References
 [1] https://github.com/zalandoresearch/fashion-mnist
