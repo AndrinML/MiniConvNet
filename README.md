@@ -50,16 +50,24 @@ The experiments were run on GPU on a GeForce GTX 960M graphics card.
 It was really fun to see how straight forward one can build something meaningful.  
 
 ### Training Results
-![](figures/adam_no_augmentation.png)*Training history of "MiniConvNet" using the Adam optimizer without data
+![](figures/adam_no_augmentation.png)
+
+*Training history of "MiniConvNet" using the Adam optimizer without data
 augmentation over 10 epochs.*
 
-![](figures/adam_data_augmentation.png)*Training history of "MiniConvNet" using the Adam optimizer and data augmentation
+![](figures/adam_data_augmentation.png)
+
+*Training history of "MiniConvNet" using the Adam optimizer and data augmentation
 over 10 epochs.*
 
-![](figures/rmsprop_0_0005_no_augmentation.png)*Training history of "MiniConvNet" using the RMSprop optimizer without
+![](figures/rmsprop_0_0005_no_augmentation.png)
+
+*Training history of "MiniConvNet" using the RMSprop optimizer without
 data augmentation over 10 epochs and a learning rate of 0.0005.*
 
-![](figures/rmsprop_0_0005_data_augmentation.png)*Training history of "MiniConvNet" using the RMSprop optimizer and
+![](figures/rmsprop_0_0005_data_augmentation.png)
+
+*Training history of "MiniConvNet" using the RMSprop optimizer and
 data augmentation over 10 epochs and a learning rate of 0.0005.*
 
 #### References
