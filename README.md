@@ -40,7 +40,7 @@ The training data is augmented to bring more variation into the data set.
 This will prevent overfitting and possibly better performance during validation.
 The training data is randomly rotated, shifted horizontally and vertically, and mirrored horizontally.
 
-#### Training Time, Memory, 
+#### Training time and memory, 
 Due to the available GPU training time was within the range of five minutes or less.
 The data set consisting of only 60'000 (28 x 28) images is relatively small.
 The model size is roughly 1.5 MB. 
